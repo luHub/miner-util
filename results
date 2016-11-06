@@ -1,0 +1,81 @@
+methodHistories  authors sumOfStmtAdded maxStmtAdded avgStmtAdded= sumOfStmtDeleted maxStmtDeleted avgStmtDeleted churn maxChurn= avgChurn decl cond elseAdded elseDeleted numberOfBugs= commiterNameList
+this(matchVersion, stopwords, CharArraySet.EMPTY_SET); 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+this(matchVersion, DefaultSetHolder.DEFAULT_STOP_SET); 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+/** Creates a new ArabicStemFilterFactory */ 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Shai Erera]
+TokenStream result = new LowerCaseFilter(matchVersion, source); 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+super(stopwords); 2 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+final Tokenizer source = new StandardTokenizer(matchVersion, reader); 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+/**
+   * Creates
+   * {@link org.apache.lucene.analysis.Analyzer.TokenStreamComponents}
+   * used to tokenize all the text in the provided {@link Reader}.
+   * 
+   * @return {@link org.apache.lucene.analysis.Analyzer.TokenStreamComponents}
+   *         built from an {@link StandardTokenizer} filtered with
+   *         {@link LowerCaseFilter}, {@link StopFilter},
+   *         {@link ArabicNormalizationFilter}, {@link SetKeywordMarkerFilter}
+   *         if a stem exclusion set is provided and {@link ArabicStemFilter}.
+   */ 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Chris M. Hostetter]
+/**
+   * Builds an analyzer with the given stop words
+   * 
+   * @param stopwords
+   *          a stopword set
+   */ 2 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+final Tokenizer source = new StandardTokenizer(matchVersion); 2 2 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 1 [Robert Muir, Simon Willnauer]
+(! args.isEmpty()) 2 1 0 0 0.0 2 0 1.0 -2 0 -1.0 0 0 0 0 0 [Shai Erera]
+/** Creates a new ArabicNormalizationFilterFactory */ 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Shai Erera]
+this(stopwords, CharArraySet.EMPTY_SET); 2 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+final Tokenizer source = new StandardTokenizer(); 2 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 1 [Robert Muir]
+org.apache.lucene.analysis.ar.ArabicAnalyzer.normalize(String,TokenStream) 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Mike McCandless]
+getVersion().onOrAfter(Version.LUCENE_5_4_0) 2 2 1 1 0.5 1 1 0.5 0 1 0.0 0 0 0 0 1 [Shai Erera, Ryan Ernst]
+/**
+   * Creates
+   * {@link org.apache.lucene.analysis.Analyzer.TokenStreamComponents}
+   * used to tokenize all the text in the provided {@link Reader}.
+   * 
+   * @return {@link org.apache.lucene.analysis.Analyzer.TokenStreamComponents}
+   *         built from an {@link StandardTokenizer} filtered with
+   *         {@link LowerCaseFilter}, {@link DecimalDigitFilter}, {@link StopFilter},
+   *         {@link ArabicNormalizationFilter}, {@link SetKeywordMarkerFilter}
+   *         if a stem exclusion set is provided and {@link ArabicStemFilter}.
+   */ 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Ryan Ernst]
+super(matchVersion, stopwords); 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+/**
+   * Builds an analyzer with the given stop word. If a none-empty stem exclusion set is
+   * provided this analyzer will add a {@link SetKeywordMarkerFilter} before
+   * {@link ArabicStemFilter}.
+   * 
+   * @param stopwords
+   *          a stopword set
+   * @param stemExclusionSet
+   *          a set of terms not to be stemmed
+   */ 2 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+this(DefaultSetHolder.DEFAULT_STOP_SET); 2 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+this.stemExclusionSet = CharArraySet.unmodifiableSet(CharArraySet.copy(stemExclusionSet)); 2 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+super(args); 2 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Shai Erera]
+result = new DecimalDigitFilter(result); 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Shai Erera]
+result = new StopFilter(result, stopwords); 2 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+/**
+   * Builds an analyzer with the given stop words
+   * 
+   * @param matchVersion
+   *          lucene compatibility version
+   * @param stopwords
+   *          a stopword set
+   */ 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+TokenStream result = new LowerCaseFilter(source); 2 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+this.stemExclusionSet = CharArraySet.unmodifiableSet(CharArraySet.copy(matchVersion, stemExclusionSet)); 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+result = new StopFilter(matchVersion, result, stopwords); 1 1 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir]
+/**
+   * Builds an analyzer with the given stop word. If a none-empty stem exclusion set is
+   * provided this analyzer will add a {@link SetKeywordMarkerFilter} before
+   * {@link ArabicStemFilter}.
+   * 
+   * @param matchVersion
+   *          lucene compatibility version
+   * @param stopwords
+   *          a stopword set
+   * @param stemExclusionSet
+   *          a set of terms not to be stemmed
+   */ 2 2 0 0 0.0 0 0 0.0 0 0 0.0 0 0 0 0 0 [Robert Muir, Chris M. Hostetter]
