@@ -12,18 +12,19 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
+import org.apache.log4j.Logger;
+
 import core.Config;
+import core.MethodBugLevelCollector;
 
 
+
+//TODO call properly console, refactor this class 
 public class GitReader {
 
+    final static Logger logger = Logger.getLogger(GitReader.class);
 
-
-
-	//This is map that will be running in 2 threads so caution
-	
-	
-	//From Java World
+    //From Java World
 	class StreamGobbler extends Thread
 	{
 	    InputStream is;
